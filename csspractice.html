@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PRACTICE</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+  body {
+      background-image:url("bgimage.jpg");
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-position:center;
+  background-color: chartreuse;
+  font-size:15px;
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+  body {
+    background-color: #fff;
+    font-size: 25px;
+  }
+}
+
+    .container{
+        position: relative;
+        left: 200px;
+
+        width:400px;
+        height:200px;
+        border-radius: 25px;
+        background-color: blueviolet;
+        border: 2px solid black;
+        border: dashed;
+
+    }
+    .firstimg{
+        position: absolute;
+        left: 100px;
+        top: 50px;
+        filter: grayscale(100%);
+    }
+    .content{
+        position: absolute;
+        float: left;
+        width: 10%;
+        left: 20px;
+        top: 10px;
+    }
+    .alias {cursor: alias;}
+.all-scroll {cursor: all-scroll;}
+.auto {cursor: auto;}
+.cell {cursor: cell;}
+.context-menu {cursor: context-menu;}
+.col-resize {cursor: col-resize;}
+.copy {cursor: copy;}
+.crosshair {cursor: crosshair;}
+.default {cursor: default;}
+.e-resize {cursor: e-resize;}
+.ew-resize {cursor: ew-resize;}
+.grab {cursor: grab;}
+.grabbing {cursor: grabbing;}
+.help {cursor: help;}
+.move {cursor: move;}
+.n-resize {cursor: n-resize;}
+.ne-resize {cursor: ne-resize;}
+.nesw-resize {cursor: nesw-resize;}
+.ns-resize {cursor: ns-resize;}
+.nw-resize {cursor: nw-resize;}
+.nwse-resize {cursor: nwse-resize;}
+.no-drop {cursor: no-drop;}
+.none {cursor: none;}
+.not-allowed {cursor: not-allowed;}
+.pointer {cursor: pointer;}
+.progress {cursor: progress;}
+.row-resize {cursor: row-resize;}
+.s-resize {cursor: s-resize;}
+.se-resize {cursor: se-resize;}
+.sw-resize {cursor: sw-resize;}
+.text {cursor: text;}
+.url {cursor: url(myBall.cur),auto;}
+.w-resize {cursor: w-resize;}
+.wait {cursor: wait;}
+.zoom-in {cursor: zoom-in;}
+.zoom-out {cursor: zoom-out;}
+
+.boxmodel{
+    margin: 60px 0 0 60px;
+    padding:10px;
+    width:200px;
+    height:100px;
+    background-color:#66bfbf;
+    border:2px solid black;
+    
+
+}
+.para{
+    position:relative;
+}
+h1{
+    display:inline;
+    position:relative;
+    
+    display:inline;
+    color:red;
+    font-family:"Caveat";;
+}
+.hvr:hover{
+    font-family: 'Dancing Script', cursive;
+    color:#fff;
+    font-size:250%;
+    display:inline;
+}
+.one{
+    
+    position:relative;
+    left:0;
+    
+}
+.two{
+    padding:10px;
+    
+    position:absolute;
+    left:300px;
+    top:340px;
+    bottom:30px;
+
+}
+.three{
+    
+    position:absolute;
+    left:600px;
+    top:340px;
+    bottom:30px;
+
+
+}
+.four{
+    position:absolute;;
+    left:800px;
+    top:100px;
+
+}
+.tooltip {
+    text-align:center;
+  position: relative;
+  top:50px;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: -15;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.trnslate{
+    position:relative;
+    left:800px;
+    padding:10px;
+    width:300px;
+    height:100px;
+    background-color:yellow;
+    border:1px solid black;
+    transform:translate(50px,100px);
+}
+.guvi{
+    position:absolute;
+    
+    clip:rect(0px,60px,200px,0px);
+    
+}
+.flt{
+    position:absolute;
+    top:450px;
+    left:700px;
+    width:400px;
+    background-color:#fff;
+}
+.d{position:relative;
+    font-size:7rem;
+    float:left;
+    height:60px;
+    bottom:25px;
+    margin:0px 0px 0px 10px ;
+}
+.rop{
+    position:relative;
+    right:5px;
+    left:2px;
+    
+    font-size:2rem;
+}
+.shapes{
+    position:relative;
+    top:200px;
+    left:100px;
+    width:200px;
+    height:50px;
+    border:2px solid black;
+    background-color:#66bfbf;
+    border-radius:20px 5px 20px 0px;
+    padding:50px;
+}
+#main{
+    font-size: 20px;
+    text-align: center;
+   position:relative;
+   width: 350px;
+   height: 100px;
+   border: 1ps solid #c3c3c3;
+   display: flex;
+   flex-direction:row-reverse;
+}
+#main div{
+    width:100px;
+    height:50px;
+}
+.ppp{
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 210px;
+    /* float: right; */
+}
+.borderimg{
+    border-image: url('/media/examples/border-diamonds.png') 30 stretch;
+}
+.borderimgaestrectch{
+    border: 10px solid transparent;
+     border-image: url(border1.png) 30 stretch;
+  }
+  .roundedleftcorner{
+      padding: 7% 15%;
+      text-align: center;
+      background-color: palegreen;
+      width: 400px;
+      height: 100px;
+      border-radius: 0 0 0 50px;
+  }
+  .tanspopac{
+    margin: 10px 10px;
+      padding:10px 10px;
+      opacity: 50%;
+  }
+  .tanspopac:hover{
+      
+      opacity: unset;
+  }
+  .allthewaytoright{
+      position: absolute;
+      right: 0;
+      width: 300px;
+      height: auto;
+      background-color: cadetblue;
+  }
+
+  .scrollbar{
+      margin: 10px 10px;
+      padding: 10px 10px;
+      background-color: olivedrab;
+      width: 150px;
+      height: 300px;
+      overflow-x: scroll;
+  }
+  #grad {
+      width: 300px;
+      height: 150px;
+  background-image: linear-gradient(white,red,blue,green);
+  }
+
+  .rotte{
+      width: 100px;;
+      position: relative;
+      margin-top: 150px;
+    transform: rotate(45deg);
+    
+  }
+  .boxes{
+    
+      
+      background-color: #fff;
+      width: 550px;
+      height: 300px;
+      margin: 80px 10px;
+      padding: 10px 10px;
+  }
+  .red{
+      position: relative;
+      width: 100px;
+      height: 200px;
+      background-color: red;
+  }
+  .green{
+      position: absolute;
+        left: 128px;
+        top:3119px;
+      width: 80px;
+      height: 200px;
+      background-color: green;
+  }
+  .blue{
+      position:relative;
+      left:180px;
+      bottom:200px;
+      width:100px;
+      height:100px;
+      background-color:blue;
+  }
+  .pink{
+      position:relative;
+      left:180px;
+      bottom:200px;
+      width:100px;
+      height:100px;
+      background-color:pink;
+
+  }
+  .brimgprop{
+      width: 100%;
+      height:100px;
+      background-color:#fff;
+  }
+
+
+
+</style>
+<body>
+
+<div class="resizefont">
+ON RESIZING THE SCREEN THE FONT SIZED WILL BE REARRANGED BY ITS OWN
+RESIZING DONE BASED ON THE WIDTH SIZE OF 700-800;
+FOR THE WIDTH OF 700-800 THE FONT SIZE WILL BE 15PX AND APART FROM THAT THE FONT SIZE WILL BE 10PX
+</div>
+
+    <div class="container">
+        <div class="content">
+            ROUNDED AND DASHED BORDER WITH GREYSCALE OF 100%
+        </div>
+        <img class="firstimg" src="https://camo.githubusercontent.com/da092347de875d0327cd7419f20b2af6866b43deafeeddd038e7428b0938ad13/68747470733a2f2f656e637279707465642d74626e302e677374617469632e636f6d2f696d616765733f713d74626e253341414e6439476352315775514c486a616f71464c5142564a54506d71564736576649774b326a447866315241796343514a4a6875686a69743626757371703d434155" alt="guvi image" width="100px" height="100px">
+        
+    </div>
+     <div class="differenttypecursors">
+         
+<h1>The cursor Property</h1>
+<p>Mouse over the words to change the mouse cursor.</p>
+<div class="one">
+
+<span class="alias">alias</span>
+<p class="all-scroll">all-scroll</p>
+<p class="auto">auto</p>
+<p class="cell">cell</p>
+<p class="context-menu">context-menu</p>
+<p class="col-resize">col-resize</p>
+<p class="copy">copy</p>
+<p class="crosshair">crosshair</p>
+<p class="default">default</p>
+<p class="e-resize">e-resize</p>
+<p class="ew-resize">ew-resize</p>
+<p class="grab">grab</p>
+<p class="grabbing">grabbing</p>
+<p class="help">help</p>
+</div>
+<div class="two">
+<p class="move">move</p>
+<p class="n-resize">n-resize</p>
+<p class="ne-resize">ne-resize</p>
+<p class="nesw-resize">nesw-resize</p>
+<p class="ns-resize">ns-resize</p>
+<p class="nw-resize">nw-resize</p>
+<p class="nwse-resize">nwse-resize</p>
+<p class="no-drop">no-drop</p>
+<p class="none">none</p>
+<p class="not-allowed">not-allowed</p>
+<p class="pointer">pointer</p>
+<p class="progress">progress</p>
+<p class="row-resize">row-resize</p>
+<p class="s-resize">s-resize</p>
+</div>
+<div class="three">
+<p class="se-resize">se-resize</p>
+<p class="sw-resize">sw-resize</p>
+<p class="text">text</p>
+<p class="url">url</p>
+<p class="w-resize">w-resize</p>
+<p class="wait">wait</p>
+<p class="zoom-in">zoom-in</p>
+<p class="zoom-out">zoom-out</p> </div>
+</div>
+<div class='four'>
+<div class='boxmodel'>
+        <p class="para">RIGHT CLICK HERE AND GO FOR INSPECT THEN BOX MODEL WILL APPERE ON STYLE</p>
+    </div>
+
+    <h1 class="hvr">HOVER PROPERTIES.</h1>
+
+
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+      </div>
+    </div>
+
+    <div class="trnslate">  
+        THIS DIV ELEMENT IS MOVED 50px TO THE RIGHT, AND 100px DOWN FROM ITS CURRENT POSITION. 
+        USING TRANSFORM:TRANSLATE(50PX,100PX)
+    </div>
+    
+    <div>
+        <h1>Image with clip:rect(0px,60px,200px,0px)</h1>
+        <br>
+        <br>
+        <img class='guvi' src="guviimage.png" alt="guvi" >
+    </div>
+
+    <div class='flt'>
+        <div class="d">D</div>
+        <div class="rop">
+            rop caps can be used to add emphasis to blocks of text but know they can affect readability.
+            
+        </div>
+    </div>
+    <div class="shapes">
+        border-radius properties to shape the border
+    </div>
+    <p class="ppp">CSS rules to set the direction of the flexible items inside the div element in reverse order</p>
+    <div id="main">
+       
+       <div style="background-color: coral;">A</div>
+       <div style="background-color: brown;">B</div>
+       <div style="background-color:blue;">C</div>
+       <div style="background-color: yellow;">D</div>
+       <div style="background-color: green;">E</div>
+       <div style="background-color: orange;">F</div>
+
+   </div>
+   <div class="borderimg">
+       <h1>this is a div element with border image of 30px stretched</h1>
+       <br>
+       <br>
+       <img class="borderimgaestrectch" src="guviimage.png" alt="image" >
+   </div>
+
+   <div class="roundedleftcorner">
+   <h1> Give the div element a rounded corner (25px radius) on the bottom left side</h1>
+    
+    </div>
+
+    <img class="tanspopac" src="guviimage.png" alt=" guvi image" width="170" height="100">
+    
+    <div class="allthewaytoright">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, labore numquam tenetur officia iste amet, 
+        illum molestias temporibus porro explicabo expedita. Eveniet magni veritatis animi necessitatibus, 
+        velit debitis laboriosam maiores!
+    </div>
+    <div class="scrollbar">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repudiandae quos sint consequatur amet 
+        aut rerum officia dolores ullam 
+        necessitatibus libero ipsum pariatur non, nobis tempore, sit ad vel? Fugit!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore rerum at ducimus ea tenetur pariatur, aspernatur fugit laboriosam ipsam illum. Libero nam est ea impedit praesentium a, rem iusto ipsa?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At quia, magnam earum sed doloremque aliquid eius incidunt non ratione. Obcaecati aliquid harum culpa ea tempore velit commodi, fugit nihil laudantium?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi eligendi nam deserunt odio! Cupiditate, maxime? Rerum, reiciendis incidunt magnam soluta veniam aperiam adipisci dolorum consequuntur officiis eos ut, temporibus consequatur?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nostrum iste rem! Repudiandae illum repellat dolor labore magni animi doloribus nam. Nobis at accusantium dolores dicta, eveniet hic autem pariatur.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem ad ab aliquid earum dignissimos unde est iusto molestiae nemo eligendi, tenetur voluptates laborum consectetur nostrum! Reprehenderit cum dolore dolorem voluptatem.
+
+    </div>
+    <div id="grad">
+
+    </div>
+    <div class="rotte">
+        <h1>transform:rotate(45deg)</h1>
+        
+        <img src="guviimage.png" alt="guvi image" width="170px" height="100px">
+    </div>
+
+
+    <div class="boxes">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="pink"></div>
+    </div>
+
+    <div class="bgimageprop">
+
+    </div>
+</body>
+</html>
